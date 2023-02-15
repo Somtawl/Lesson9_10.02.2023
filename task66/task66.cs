@@ -7,6 +7,7 @@ int sum = 0;
 if (numM >= numN) Console.WriteLine("число m не может быть больше или равным числу n");
 else 
 {
+    Console.Write("Сумма чисел от {0} до {1} = ",numM,numN);
     Console.WriteLine(getSum(numM,numN));
 }
 
@@ -14,7 +15,6 @@ int getSum(int m, int n)
 {
     if (m <= n)
     {
-        Console.WriteLine("m = {0} n = {1}",m,n);
         sum = sum + m;
         m++;
         getSum(m,n);
